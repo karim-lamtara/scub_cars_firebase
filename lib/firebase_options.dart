@@ -32,10 +32,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.linux:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return web;
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -67,7 +64,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '578791414879',
     projectId: 'pimp-my-dev',
     storageBucket: 'pimp-my-dev.appspot.com',
-    iosClientId: '578791414879-ceqg73mpvrtie8bnh7660friunlda01e.apps.googleusercontent.com',
+    iosClientId:
+        '578791414879-ceqg73mpvrtie8bnh7660friunlda01e.apps.googleusercontent.com',
     iosBundleId: 'com.example.pimpMyDev',
   );
 
@@ -77,7 +75,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '578791414879',
     projectId: 'pimp-my-dev',
     storageBucket: 'pimp-my-dev.appspot.com',
-    iosClientId: '578791414879-6m5nhrp891ge9hbqde84hmc27i7gtfsl.apps.googleusercontent.com',
+    iosClientId:
+        '578791414879-6m5nhrp891ge9hbqde84hmc27i7gtfsl.apps.googleusercontent.com',
     iosBundleId: 'net.scub.pimpmydev',
   );
 }
